@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 244" width="1024" height="244">
+  <defs>
+    <filter id="mtShadow" x="-6%" y="-6%" width="112%" height="118%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="4" result="b"/>
+      <feOffset dx="0" dy="3" in="b" result="o"/>
+      <feFlood flood-color="#000" flood-opacity="0.5" result="f"/>
+      <feComposite in="f" in2="o" operator="in" result="sh"/>
+      <feMerge>
+        <feMergeNode in="sh"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <clipPath id="mtInner">
+      <rect x="7" y="7" width="1010" height="228" rx="7" ry="7"/>
+    </clipPath>
+  </defs>
+
+  <g filter="url(#mtShadow)">
+    <rect x="6" y="6" width="1012" height="232" rx="8" fill="#1a1a1a" stroke="#3d3d3d" stroke-width="1"/>
+
+    <g clip-path="url(#mtInner)">
+      <path d="M 7 14 Q 7 7 14 7 H 1010 Q 1017 7 1017 14 V 43 H 7 Z" fill="#2d2d2d"/>
+      <line x1="7" y1="43" x2="1017" y2="43" stroke="#1a1a1a" stroke-width="1"/>
+
+      <rect x="7" y="44" width="1010" height="191" fill="#0c0c0c"/>
+
+      <path d="M 16 12 L 16 21 Q 16 25 19 27 L 23 30 L 27 27 Q 30 25 30 21 L 30 12 Q 23 9 16 12 Z" fill="none" stroke="#a8a8a8" stroke-width="1" stroke-linejoin="round" opacity="0.9"/>
+
+      <path d="M 44 43 L 44 13 Q 44 8 49 8 H 286 Q 291 8 291 13 V 43 Z" fill="#000000"/>
+
+      <rect x="52" y="15" width="14" height="14" rx="1" fill="none" stroke="#d0d0d0" stroke-width="0.85"/>
+      <text x="53.2" y="25.8" font-family="Cascadia Mono, Consolas, monospace" font-size="7" fill="#e8e8e8">C:\&gt;</text>
+
+      <text x="70" y="26" font-family="Segoe UI, system-ui, sans-serif" font-size="11" fill="#cccccc">administrator@DESKTOP-2ON...</text>
+
+      <g stroke="#c8c8c8" stroke-width="1" stroke-linecap="round" fill="none">
+        <path d="M 274 17 L 282 25 M 282 17 L 274 25"/>
+      </g>
+
+      <g stroke="#d0d0d0" stroke-width="1.1" stroke-linecap="round" fill="none">
+        <line x1="300" y1="21" x2="300" y2="29"/>
+        <line x1="296" y1="25" x2="304" y2="25"/>
+        <path d="M 315 22 L 319 26 L 323 22"/>
+      </g>
+
+      <g fill="none" stroke="#e8e8e8" stroke-width="1" stroke-linecap="round">
+        <line x1="888" y1="25" x2="912" y2="25"/>
+        <rect x="934" y="17" width="12" height="10" rx="0.5"/>
+        <path d="M 980 17 L 992 29 M 992 17 L 980 29"/>
+      </g>
+    </g>
+  </g>
+
+  <g font-family="Cascadia Mono, Consolas, 'Courier New', monospace" font-size="10.5">
+    <text x="14" y="64">
+      <tspan fill="#16c60c">user@dev</tspan><tspan fill="#3b8eea">:~</tspan><tspan fill="#cccccc">$ </tspan><tspan fill="#cccccc">grep max_tokens ~/.cortex/agents/test-agent.md</tspan>
+    </text>
+    <text x="14" y="88" fill="#cccccc">max_tokens: 4096</text>
+    <text x="14" y="118">
+      <tspan fill="#16c60c">user@dev</tspan><tspan fill="#3b8eea">:~</tspan><tspan fill="#cccccc">$ </tspan><tspan fill="#cccccc">cortex agent show test-agent</tspan>
+    </text>
+    <text x="14" y="142" fill="#cccccc">name: test-agent</text>
+    <text x="14" y="166" fill="#cccccc">model: sonnet</text>
+    <text x="14" y="196">
+      <tspan fill="#16c60c">user@dev</tspan><tspan fill="#3b8eea">:~</tspan><tspan fill="#cccccc">$ </tspan><tspan fill="#e0e0e0">|</tspan>
+    </text>
+  </g>
+</svg>
